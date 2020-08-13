@@ -1,0 +1,22 @@
+server:
+  port: 6868
+
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: lin
+      password: 123
+
+eureka:
+  instance:
+    hostname: localhost
+
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false

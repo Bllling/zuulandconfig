@@ -1,0 +1,22 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zuul-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://lin:123@127.0.0.1:6868/eureka
+zuul:
+  max:
+    host:
+      connection: 500
+  host:
+    maxTotalConnections: 200
+    maxPerRouteConnections: 20
+  routes:
+    service-rpc-user:
+      path:  /user/**
+      serviceId: user-service
+
+

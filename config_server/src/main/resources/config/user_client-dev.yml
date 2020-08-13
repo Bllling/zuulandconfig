@@ -1,0 +1,6 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lin:123@127.0.0.1:6868/eureka
+
+
