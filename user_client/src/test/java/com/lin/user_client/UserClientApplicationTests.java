@@ -32,7 +32,7 @@ class UserClientApplicationTests {
 	void test2()  {
 		User user = new User();
 		ValueOperations<String,User> valueOperations = redisTemplate.opsForValue();
-		System.out.println(valueOperations.get("love"));
+		System.out.println(valueOperations.get("hh"));
 	}
 
 	@Test

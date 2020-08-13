@@ -1,7 +1,10 @@
+server:
+  port: 7777
+
 spring:
   cloud:
     config:
-      uri: http://127.0.0.1:5566/
+      uri: http://127.0.0.1:5566
       label: master
       name: user_client #文件前缀
       profile: dev  # {name}-{profile}.yml
