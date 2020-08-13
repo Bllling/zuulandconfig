@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: native
+    active: git
 ---
 server:
   port: 5566
@@ -35,11 +35,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Bllling/fresh-springcloud.git
+          uri: https://github.com/Bllling/zuulandconfig/
           username: 1556629488@qq.com # 用户名
           password: Insurance520 # 登录密码
           default-lable: master # 分支
-          search-paths: fresh-springcloud-config/src/main/resources  # 配置文件分支
+          search-paths: config_center/src/main/resources  # 配置文件分支
 
 eureka:
   client:

@@ -1,3 +1,29 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: user-client
+
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
+  session:
+    store-type: redis
+
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+
 eureka:
   client:
     service-url:
