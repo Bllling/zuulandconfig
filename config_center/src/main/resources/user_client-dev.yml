@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user-client
+    name: user-service
 
   http:
     encoding:
